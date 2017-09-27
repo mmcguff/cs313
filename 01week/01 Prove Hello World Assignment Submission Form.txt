@@ -1,0 +1,36 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://helloworldcs313.herokuapp.com/
+
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/mmcguff/helloworldcs313
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+This one is straight forward.  You enter the url and it displays the php page with the text hello world.  Nothing fancy. 
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+All appears to functioning.  If there is anything you notice let me know immediately.  Everything seems to be testing fine here. 
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+Heroku is assume.  I love the fact I can deploying things that are not just static pages for free.  Mind blown. 
+
+
+
+6. Please select the category you feel best describes your assignment:
+
+D - Meets requirements  --Clear this is what I have as of today 9.11.2017.  I might make some improvements before the end of the week to make this more fun.  I set it up so that when I deploy changes to git hub in my master branch they automatically get deployed. 
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+
+No justification needed.  You asked for a Hello World deployment to Heroku and that is what I have.  
+
+
