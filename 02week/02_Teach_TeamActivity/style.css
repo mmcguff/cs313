@@ -1,0 +1,30 @@
+body{
+    background-color: grey;
+}
+
+.one {
+    background-color: red;
+}
+
+.one:hover{
+    font-weight: bold;
+}
+
+.two {
+    font-size: 15 px;
+    background-color: yellow; 
+}
+
+.two:hover{
+    font-weight: bold;
+}
+
+
+.three{
+    font-size: 20 px;
+    background-color: lightblue;    
+}
+
+.three:hover{
+    font-weight: bold;
+}

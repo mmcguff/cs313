@@ -1,0 +1,35 @@
+
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://homepagecs313matthewmcguff.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/mmcguff/02_HomePage
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+Site also looks pretty nice on mobile.  Didn't really design it to be 
+
+I have provided a link to all existing work.  All work that is ready to grade is
+represented with green text. Put together some animated pieces as a background image. 
+Looks cool to me.  :)
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+I need to make this page more dynamic.  I have a seperate div element for every week.  This could be improved. I also would like to make better us of the rest of the page of the site.  Not sure what to do with it. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+Playing with opacity is pretty neat.  Love the effect I was able to achieve here.  
+
+
+6. What is the difference between an HTTP Get and Post? When should each be used?
+HTTP Get requests data from the target server where HTTP Post submits data to be processed by the server.  You should use Get when you only needing to retrive data from the server.  (A weather app would be a good example of this).  An HTTP Post should be used when you have get data from the client that the server needs. ( A contact request form is a good example of this).  
+
+7. Please select the category you feel best describes your assignment:
+E - Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+This site not only makes it very easy for you to grade me in the future. (Just look for the green text).  It makes batman happy with its dark theme and has some very neat animation only done with CSS without being over done.  It also has a pretty good responsive design.  
+
+
