@@ -9,60 +9,104 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="btn-group btn-group-justified">
-            <a href="browse_items.html" class="btn btn-success">Browse</a>
-            <a href="view_cart.html" class="btn btn-primary">Cart</a>
-            <a href="checkout.html" class="btn btn-primary">Checkout</a>
-            <a href="confirmation.html" class="btn btn-primary">Confirmation</a>
+        <script src="javascript.js"></script>
+    <div class="main">
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                <a href="browse_items.html" class="btn btn-success">Browse</a>
+                <a href="view_cart.html" class="btn btn-primary">Cart</a>
+                <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                <a href="confirmation.html" class="btn btn-primary">Confirmation</a>
+            </div>
         </div>
-    </div>
 
 
-    <div class="heading">
-        <h1>Welcome to McGuff's Animal store!</h1>
-        <p>Click to add an animal to the shopping cart.</p>
-    </div>
+        <div class="heading">
+            <h1>Welcome to McGuff's Animal Store!</h1>
+            <p>Click to add an animal to the shopping cart.</p>
+        </div>
 
 
-    <div class="gallery">
-        <a target="_blank" href="img/dog.jpg">  
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column nature show">
+                <div class="content"><a  href="view_cart.html">
+                    <img src="img/dog.jpg" alt="Dog" style="width:100%">
+                    <h4>Dog</h4>
+                    <div class="item_price">$10</div>
+                    </a>
+                </div>
+            </div>
+            <div class="column nature show">
+                <div class="content"><a  href="view_cart.html">
+                    <img src="img/cat.jpg" alt="Cat" style="width:100%">
+                    <h4>Cat</h4>
+                    <div class="item_price">$10</div>
+                </a>
+                </div>
+            </div>
+            <div class="column nature show">
+                <div class="content"><a  href="view_cart.html">
+                    <img src="img/squirrel.jpg" alt="Squirrel" style="width:100%">
+                    <h4>Squirrel</h4>
+                    <div class="item_price">$15</div>
+                </a>
+                </div>
+            </div>
+
+            <div class="column cars show">
+                <div class="content"><a  href="view_cart.html">
+                    <img src="img/whale.jpg" alt="Whale" style="width:100%">
+                    <h4>Whale</h4>
+                    <div class="item_price">$100</div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="gallery">
+            <a target="_blank" href="img/dog.jpg">  
               <img src="img/dog.jpg" alt="Dog" width="300" height="200">
             </a>
-        <div class="item_title">Dog</div>
-        <div class="item_price">$10</div>
-    </div>
+            <div class="item_title">Dog</div>
+            <div class="item_price">$10</div>
+        </div>
 
 
-    <div class="gallery">
-        <a target="_blank" href="img/cat.jpg">
+        <div class="gallery">
+            <a target="_blank" href="img/cat.jpg">
               <img src="img/cat.jpg" alt="Cat" width="300" height="200">
             </a>
-        <div class="item_title">Cat</div>
-        <div class="item_price">$10</div>
-    </div>
+            <div class="item_title">Cat</div>
+            <div class="item_price">$10</div>
+        </div>
 
-    <div class="gallery">
-        <a target="_blank" href="img/squirrel.jpg">
+        <div class="gallery">
+            <a target="_blank" href="img/squirrel.jpg">
               <img src="img/squirrel.jpg" alt="Squirrel" width="600" height="400">
             </a>
-        <div class="item_title">Squirrel</div>
-        <div class="item_price">$15</div>
-    </div>
+            <div class="item_title">Squirrel</div>
+            <div class="item_price">$15</div>
+        </div>
 
-    <div class="gallery">
-        <a target="_blank" href="img/whale.jpg">
+        <div class="gallery">
+            <a target="_blank" href="img/whale.jpg">
               <img src="img/whale.jpg" alt="Whale" width="600" height="400">
             </a>
-        <div class="item_title">Whale</div>
-        <div class="item_price">$100</div>
+            <div class="item_title">Whale</div>
+            <div class="item_price">$100</div>
+        </div> -->
+
     </div>
-
-
 
 
 
