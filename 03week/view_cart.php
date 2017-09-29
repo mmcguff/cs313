@@ -1,3 +1,9 @@
+<?php
+// Start the session
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,20 +16,31 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <script src="javascript.js"></script>
             <div class="container">
                     <div class="btn-group btn-group-justified">
-                        <a href="browse_items.html" class="btn btn-primary">Browse</a>
-                        <a href="view_cart.html" class="btn btn-success">Cart</a>
-                        <a href="checkout.html" class="btn btn-primary">Checkout</a>
-                        <a href="confirmation.html" class="btn btn-primary">Confirmation</a>
+                        <a href="browse_items.php" class="btn btn-primary">Browse</a>
+                        <a href="view_cart.php" class="btn btn-success">Cart</a>
+                        <a href="checkout.php" class="btn btn-primary">Checkout</a>
+                        <a href="confirmation.php" class="btn btn-primary">Confirmation</a>
                     </div>
                 </div>
             
+
+            Welcome <?php echo $_POST["name"]; ?><br>
+            Your email address is: <?php echo $_POST["email"]; ?>
+            Dog Price: <?php echo $_POST["dog"];?>
             
                 <div class="heading">
                     <h1>Welcome to McGuff's Animal store!</h1>
                     <p>Click to add an animal to the shopping cart.</p>
                 </div>
+
+                <?php
+// Echo session variables that were set on previous page
+echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+?>
     
     </body>
 </html>

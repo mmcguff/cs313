@@ -11,10 +11,10 @@
         <body>
                 <div class="container">
                         <div class="btn-group btn-group-justified">
-                            <a href="browse_items.html" class="btn btn-primary">Browse</a>
-                            <a href="view_cart.html" class="btn btn-primary">Cart</a>
-                            <a href="checkout.html" class="btn btn-primary">Checkout</a>
-                            <a href="confirmation.html" class="btn btn-success">Confirmation</a>
+                            <a href="browse_items.php" class="btn btn-primary">Browse</a>
+                            <a href="view_cart.php" class="btn btn-primary">Cart</a>
+                            <a href="checkout.php" class="btn btn-primary">Checkout</a>
+                            <a href="confirmation.php" class="btn btn-success">Confirmation</a>
                         </div>
                     </div>
                 

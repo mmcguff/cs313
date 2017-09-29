@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,20 +14,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
-        <script src="javascript.js"></script>
-    <div class="main">
+    <script src="javascript.js"></script>
+    
         <div class="container">
             <div class="btn-group btn-group-justified">
-                <a href="browse_items.html" class="btn btn-success">Browse</a>
-                <a href="view_cart.html" class="btn btn-primary">Cart</a>
-                <a href="checkout.html" class="btn btn-primary">Checkout</a>
-                <a href="confirmation.html" class="btn btn-primary">Confirmation</a>
+                <a href="browse_items.php" class="btn btn-success">Browse</a>
+                <a href="view_cart.php" class="btn btn-primary">Cart</a>
+                <a href="checkout.php" class="btn btn-primary">Checkout</a>
+                <a href="confirmation.php" class="btn btn-primary">Confirmation</a>
             </div>
-        </div>
+        
 
 
         <div class="heading">
@@ -30,41 +35,52 @@
             <p>Click to add an animal to the shopping cart.</p>
         </div>
 
+        <form action="view_cart.php" method="post">
+            Name: <input type="text" name="name" value="bob"><br> 
+            E-mail: <input type="text" name="email" value="anywhere@gmail.com"><br>
+            <input type="submit">
+        </form>
 
-        
+
         <!-- Portfolio Gallery Grid -->
         <div class="row">
+            
             <div class="column nature show">
-                <div class="content"><a  href="view_cart.html">
-                    <img src="img/dog.jpg" alt="Dog" style="width:100%">
-                    <h4>Dog</h4>
-                    <div class="item_price">$10</div>
+                <div class="content">
+                    <a href="view_cart.php" onclick="addAnimal();">
+                        <img src="img/dog.jpg" alt="Dog" style="width:100%">
+                        <h4>Dog</h4>
+                        <div class="item_price" name="dog" value="10">$10</div>
+                    </a>
+                </div>
+       
+            </div>
+            <div class="column nature show">
+                <div class="content">
+                    <a href="view_cart.html">
+                        <img src="img/cat.jpg" alt="Cat" style="width:100%">
+                        <h4>Cat</h4>
+                        <div class="item_price">$10</div>
                     </a>
                 </div>
             </div>
             <div class="column nature show">
-                <div class="content"><a  href="view_cart.html">
-                    <img src="img/cat.jpg" alt="Cat" style="width:100%">
-                    <h4>Cat</h4>
-                    <div class="item_price">$10</div>
-                </a>
-                </div>
-            </div>
-            <div class="column nature show">
-                <div class="content"><a  href="view_cart.html">
-                    <img src="img/squirrel.jpg" alt="Squirrel" style="width:100%">
-                    <h4>Squirrel</h4>
-                    <div class="item_price">$15</div>
-                </a>
+                <div class="content">
+                    <a href="view_cart.html">
+                        <img src="img/squirrel.jpg" alt="Squirrel" style="width:100%">
+                        <h4>Squirrel</h4>
+                        <div class="item_price">$15</div>
+                    </a>
                 </div>
             </div>
 
             <div class="column cars show">
-                <div class="content"><a  href="view_cart.html">
-                    <img src="img/whale.jpg" alt="Whale" style="width:100%">
-                    <h4>Whale</h4>
-                    <div class="item_price">$100</div>
-                </a>
+                <div class="content">
+                    <a href="view_cart.html">
+                        <img src="img/whale.jpg" alt="Whale" style="width:100%">
+                        <h4>Whale</h4>
+                        <div class="item_price">$100</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -107,7 +123,12 @@
         </div> -->
 
     </div>
-
+<?php
+// Set session variables
+$_SESSION["favcolor"] = "green";
+$_SESSION["favanimal"] = "cat";
+echo "Session variables are set.";
+?>
 
 
 </body>
