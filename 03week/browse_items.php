@@ -47,8 +47,8 @@ session_start();
             
             <div class="column nature show">
                 <div class="content">
-                    <a href="view_cart.php" onclick="addAnimal();">
-                        <img src="img/dog.jpg" alt="Dog" style="width:100%">
+                    <a href="#" onclick="addAnimal();">
+                        <img src="img/dog.jpg" alt="dog" style="width:100%">
                         <h4>Dog</h4>
                         <div class="item_price" name="dog" value="10">$10</div>
                     </a>
@@ -123,12 +123,7 @@ session_start();
         </div> -->
 
     </div>
-<?php
-// Set session variables
-$_SESSION["favcolor"] = "green";
-$_SESSION["favanimal"] = "cat";
-echo "Session variables are set.";
-?>
+
 
 
 </body>

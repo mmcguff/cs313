@@ -35,28 +35,30 @@
 //   element.className = arr1.join(" ");
 // }
 
-var x = {
-    "cart": {
-        "item1":"dog", "qty1":0,
-        "item2":"cat", "qty2":0,
-        "item3":"squirrel", "qty3":0,
-        "item4":"whale", "qty4":0
-    }
- };
+var obj = {
+  "cart": {
+    "item1": "dog", "qty1": 0,
+    "item2": "cat", "qty2": 0,
+    "item3": "squirrel", "qty3": 0,
+    "item4": "whale", "qty4": 0
+  }
+};
 
 
 
 function addAnimal() {
-var obj = x;
 
+  obj.cart.qty1 += 1;
 
+  $.post("set_session.php",
+    {
+      name: obj
+    },
+    function(data) {
+      alert("Dog: " + data);
+    });
 
-obj.cart.qty1 += 1;
-obj.cart.qty1 += 1;
-
-var o = obj.cart.qty1;
-
-
-  alert("working! " + o);
+    var test = obj.cart.qty1;
+    alert(test);
 
 }
