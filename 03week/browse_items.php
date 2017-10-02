@@ -2,8 +2,8 @@
 
 include 'include.php';
 
-$_SESSION['myData'] = $_POST;
-
+$_SESSION['data'] = $_POST;
+//$_SESSION['test'] = 'testing';
 
 
 ?>
@@ -36,7 +36,7 @@ $_SESSION['myData'] = $_POST;
 
 
         <div class="heading">
-            <h1>Welcome to McGuff's Animal Store!</h1>
+            <h2>Welcome to McGuff's Animal Store!</h2>
             <p>Click to add an animal to the shopping cart.</p>
         </div>
 
@@ -50,8 +50,7 @@ $_SESSION['myData'] = $_POST;
             <input type="submit" value="Add to Cart">
         </form>
 
-
-       
+     
 
         <!-- <div class="gallery">
             <a target="_blank" href="img/dog.jpg">  
