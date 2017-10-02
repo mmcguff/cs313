@@ -5,8 +5,8 @@
   <title>CS 313 Home Page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
-  <script src="javascript.js"></script>
+  <link href="02week/02_HomePage/style.css" rel="stylesheet">
+  <script src="02week/02_HomePage/javascript.js"></script>
 </head>
 
 <body>
@@ -51,7 +51,7 @@ echo "    <h3>Week 2</h3>";
 echo "    <p>Home Page. You are looking at it. Enjoy!</p>";
 echo "  </div>";
 
-echo "<a href='../../03week/browse_items.php' ";
+echo "<a href='03week/browse_items.php' ";
 echo "  <div id='week3' class='tabcontent'>";
 echo "    <h3>Week 3</h3>";
 echo "    <p>I ran into issues with getting post assigning to session. Will continue to work on this.</P>";

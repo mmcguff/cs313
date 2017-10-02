@@ -34,12 +34,12 @@
 }
 
 /*Completed Assignments*/
- #w1, #w2{
+ #w1, #w2, #w3{
      color: lightgreen;
  }
 
 /*Still to complete Assignments*/
- #w3, #w4, #w5, #w6, #w7, #w8, #w9, #w10, #w11, #w12, #w13, #w14{
+ #w4, #w5, #w6, #w7, #w8, #w9, #w10, #w11, #w12, #w13, #w14{
      color: black;
  } 
 
@@ -65,7 +65,18 @@
     height: 400px;
 }
 
-#Week3, #Week4, #Week5, #Week6, #Week7, #Week8, #Week9, #Week10, #Week11, #Week12, #Week13, #Week14  {
+#week3 {
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    background-image: url("img/animal_store.png");
+    border: 1px solid green;
+    background-size: cover;
+    margin-top: 100px;
+    height: 400px;
+}
+
+
+#Week4, #Week5, #Week6, #Week7, #Week8, #Week9, #Week10, #Week11, #Week12, #Week13, #Week14  {
     opacity: 0.7;
     filter: alpha(opacity=50);
     background-image: url("img/homepage.png");
