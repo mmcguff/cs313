@@ -1,6 +1,11 @@
 <?php
-// Start the session
-session_start();
+
+include 'include.php';
+
+$_SESSION['myData'] = $_POST;
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -35,59 +40,18 @@ session_start();
             <p>Click to add an animal to the shopping cart.</p>
         </div>
 
-        <form action="view_cart.php" method="post">
+        <form method="post" action="view_cart.php" >
             Name: <input type="text" name="name" value="bob"><br> 
             E-mail: <input type="text" name="email" value="anywhere@gmail.com"><br>
-            <input type="submit">
+            <input type="checkbox" name="dog" value="10" checked="checked">$10  Dog
+            <input type="checkbox" name="cat" value="10">$10    Cat
+            <input type="checkbox" name="squireel" value="15">$15   Squirrel
+            <input type="checkbox" name="whale" value="100">$100    Whale</br>
+            <input type="submit" value="Add to Cart">
         </form>
 
 
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-            
-            <div class="column nature show">
-                <div class="content">
-                    <a href="#" onclick="addAnimal();">
-                        <img src="img/dog.jpg" alt="dog" style="width:100%">
-                        <h4>Dog</h4>
-                        <div class="item_price" name="dog" value="10">$10</div>
-                    </a>
-                </div>
        
-            </div>
-            <div class="column nature show">
-                <div class="content">
-                    <a href="view_cart.html">
-                        <img src="img/cat.jpg" alt="Cat" style="width:100%">
-                        <h4>Cat</h4>
-                        <div class="item_price">$10</div>
-                    </a>
-                </div>
-            </div>
-            <div class="column nature show">
-                <div class="content">
-                    <a href="view_cart.html">
-                        <img src="img/squirrel.jpg" alt="Squirrel" style="width:100%">
-                        <h4>Squirrel</h4>
-                        <div class="item_price">$15</div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="column cars show">
-                <div class="content">
-                    <a href="view_cart.html">
-                        <img src="img/whale.jpg" alt="Whale" style="width:100%">
-                        <h4>Whale</h4>
-                        <div class="item_price">$100</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-
 
         <!-- <div class="gallery">
             <a target="_blank" href="img/dog.jpg">  
