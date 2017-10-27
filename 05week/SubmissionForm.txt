@@ -1,0 +1,28 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://homepagecs313matthewmcguff.herokuapp.com/05week/index.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/mmcguff/cs313/tree/mvp/05week
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+There is no login for my application at this point.  I will work on adding this next week.  At this point I have read only view of all data from all the tables of my application.  
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+Next week there will be a lot of work today.  I am wanting to create an admin view which will allow inserting, updating and delete of customer data.  I also will create a user login so just one user will be able to update their own profile.  I will likely need to add more schema to support the credentials of the logged in user.  I also want to add a nice modal box for the user to use for updating their data. 
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+Reading data from a database using PHP isn't difficult once you can get the connection established with PDO.  The sql statements that allow you to pull what you need are very powerful and I am looking for adding update, insert and delete ability.  
+
+
+6. Why should you create a separate user account for your application to access the database?
+You don't want a user to have the ability intentional or non intentionally to see or corrupt another users data.  Providing a user with a seperate account ensure they can interact with your system in more personalized and secure way.  
+
+7. Please select the category you feel best describes your assignment:
+D - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Even though this assignment was late, it does meet the basic requirement of displaying read only data to the screen as was outline in the requirements.  I also was able to display the information in a visually pleasing and readable way. 
