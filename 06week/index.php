@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
     <body>
            <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -71,6 +72,9 @@
       <input type="checkbox" value="" name="subscriber">Subscriber
     </label>
     <label class="checkbox-inline">
+      <input type="checkbox" value="" name="delivery">Home Delivery
+    </label>
+    <label class="checkbox-inline">
       <input type="checkbox" value="" name="customer">Customer
     </label>
     <label class="checkbox-inline">
@@ -79,7 +83,10 @@
     <label class="checkbox-inline">
       <input type="checkbox" value="" name="consultant">Consultant
     </label>
-   
+   <div class="input-append date form_datetime">
+    <input size="16" type="text" value="" readonly>
+    <span class="add-on"><i class="icon-th"></i></span>
+</div>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Insert</button>	
@@ -125,7 +132,7 @@ if($contactresultObj -> rowCount() > 0)
             </tbody>
         </table>
     </div>
-
     
     </body>
+
 </html>

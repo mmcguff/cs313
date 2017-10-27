@@ -19,17 +19,19 @@ if(!empty($_POST['submitted']))
 
     //Checkbox state recorded using Ternary if operator.  
     $isSubscriber = (isset($_POST['subscriber']) ? 1 : 0);
+    $isDelivery = (isset($_POST['delivery']) ? 1 : 0);
     $isCustomer = (isset($_POST['customer']) ? 1 : 0);
     $isHost = (isset($_POST['host']) ? 1 : 0);
     $isConsultant = (isset($_POST['consultant']) ? 1 : 0);
 
-    echo "<p>" . $firstName . "</p>";
-    echo "<p>" . $lastName . "</p>";
-    echo "<p>" . $email . "</p>"; 
-    echo "<p>" . $isSubscriber . "</p>"; 
-    echo "<p>" .  $isCustomer . "</p>"; 
-    echo "<p>" . $isHost . "</p>"; 
-    echo "<p>" . $isConsultant . "</p>"; 
+    echo "<p>First Name: " . $firstName . "</p>";
+    echo "<p>Last Name: " . $lastName . "</p>";
+    echo "<p>Email: " . $email . "</p>"; 
+    echo "<p>Is Subscriber: " . $isSubscriber . "</p>"; 
+    echo "<p>Is on Home Delivery: " . $isDelivery . "</p>"; 
+    echo "<p>Is Customer: " . $isCustomer . "</p>"; 
+    echo "<p>Is a Host: " . $isHost . "</p>"; 
+    echo "<p>Is a Consultant: " . $isConsultant . "</p>"; 
 
 } else
 {
