@@ -54,33 +54,40 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Insert a new contact</h4>
         </div>
+        
+        
+        <form action="insert.php" method="post">
         <div class="modal-body">
-        <form>
+        <input type="hidden" name="submitted" value="1">
+
       <label><b>First Name</b></label></br>
-      <input type="text" placeholder="Enter First Name" name="email" required></br>
+      <input type="text" placeholder="Enter First Name" name="firstName" required></br>
       <label><b>Last Name</b></label></br>
-      <input type="text" placeholder="Enter Last Name" name="email" required></br> 
+      <input type="text" placeholder="Enter Last Name" name="lastName" required></br> 
       <label><b>Email</b></label></br>
       <input type="text" placeholder="Enter Email" name="email" required></br>
     
       <label class="checkbox-inline">
-      <input type="checkbox" value="">Subscriber
+      <input type="checkbox" value="" name="subscriber">Subscriber
     </label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Customer
+      <input type="checkbox" value="" name="customer">Customer
     </label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Host
+      <input type="checkbox" value="" name="host">Host
     </label>
     <label class="checkbox-inline">
-      <input type="checkbox" value="">Consultant
+      <input type="checkbox" value="" name="consultant">Consultant
     </label>
-    </form>
+   
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Insert</button>	
+          <button type="submit" class="btn btn-primary">Insert</button>	
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
+ </form>
+
+
       </div>
     </div>
   </div>
