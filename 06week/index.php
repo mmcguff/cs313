@@ -25,7 +25,7 @@
         
         <div class="container" style="margin-top:50px">
         <h1>Contacts</h1>
-        <button type="button" class="btn btn-primary">Add Contact</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Contact</button>
 
         <table class="table table-striped">
             <thead>
@@ -41,7 +41,52 @@
                 </tr>
             </thead>
             <tbody>
-                           <?php
+
+            <div class="container">
+    <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Insert a new contact</h4>
+        </div>
+        <div class="modal-body">
+        <form>
+      <label><b>First Name</b></label></br>
+      <input type="text" placeholder="Enter First Name" name="email" required></br>
+      <label><b>Last Name</b></label></br>
+      <input type="text" placeholder="Enter Last Name" name="email" required></br> 
+      <label><b>Email</b></label></br>
+      <input type="text" placeholder="Enter Email" name="email" required></br>
+    
+      <label class="checkbox-inline">
+      <input type="checkbox" value="">Subscriber
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Customer
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Host
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Consultant
+    </label>
+    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Insert</button>	
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php
           
         require 'herokuDBConnect.php';
         $contactquery = 'select CONTACT_ID, FIRST_NAME, LAST_NAME, CUSTOMER_ID, EMAIL_ID, CONTACT_DATE, PARTY_HOST, BECOME_A_CONSULTANT from CONTACT;';
@@ -62,15 +107,18 @@ if($contactresultObj -> rowCount() > 0)
         echo "<td>". $singleRowFromQuery['party_host'].'</td>';
         echo "<td>". $singleRowFromQuery['become_a_consultant'].'</td>';
         echo "<td>".'<button type="button" class="btn btn-warning">Edit Contact</button>'."</td>";
+        echo "<td>".'<button type="button" class="btn btn-danger">Delete Contact</button>'."</td>";
         echo "</tr>";
     }
 
 }
 
         
-        ?>  
+?>  
             </tbody>
         </table>
     </div>
+
+    
     </body>
 </html>
