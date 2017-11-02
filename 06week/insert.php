@@ -52,15 +52,45 @@ if(isset($_POST["submitted"]))
    $isConsultant = isset($_POST['consultant']) && $_POST['consultant']  ? "1" : "0";
 }
 
-echo $firstName . "\n" .$lastName . "\n" . $email;
-echo "\n" . $isSubscriber;
-echo "\n" . $isCustomer;
-echo "\n" . $isHost;
-echo "\n" . $isConsultant;
+// echo $firstName . "\n" .$lastName . "\n" . $email;
+// echo "\n" . $isSubscriber;
+// echo "\n" . $isCustomer;
+// echo "\n" . $isHost;
+// echo "\n" . $isConsultant;
 
-$db->exec('insert into email(email_address, is_subscriber, is_customer, is_consultant) values("$email", "$isSubscriber", "$isCustomer", "$isConsultant"');
+echo '<div class="alert alert-success">';
+echo '<strong>Success!</strong> ' . $firstName . ' ' . $lastName . ' was successflly inserted into the database!'; 
+echo '</div>';
 
-$emailquery = 'select EMAIL_ID, EMAIL_ADDRESS, IS_SUBSCRIBER, IS_CUSTOMER, IS_CONSULTANT from EMAIL;';
+//Insert email
+$sql = 'INSERT INTO email(email_address,is_subscriber, is_customer, is_consultant) VALUES(:email,:subscriber,:customer,:consultant)';
+
+$stmt = $db->prepare($sql);
+
+$stmt->bindValue(':email', $email);
+$stmt->bindValue(':subscriber', $isSubscriber);
+$stmt->bindValue(':customer', $isCustomer);
+$stmt->bindValue(':consultant', $isConsultant);
+
+$stmt->execute();
+
+//$emailid = lastInsertId('email_id_seq');
+
+//Insert contact
+// $sql = 'INSERT INTO contact(first_name, last_name, customer_id, email_id, contact_id, party_host, become_a_consultant) VALUES(:firstname,:lastname,:customer,:emailid,:contact,:host,:consultant)';
+// $stmt = $db->prepare($sql);
+
+// $stmt->bindValue(':firstname', $firstName);
+// $stmt->bindValue(':lastname', $lastName);
+// $stmt->bindValue(':customer', $isCustomer);
+// $stmt->bindValue(':emailid', $emailid);
+// $stmt->bindValue(':host', $isHost);
+// $stmt->bindValue(':consultant', $isConsultant);
+
+// $stmt->execute();
+
+
+$emailquery = 'select EMAIL_ID, EMAIL_ADDRESS, IS_SUBSCRIBER, IS_CUSTOMER, IS_CONSULTANT from EMAIL';
 
 $emailresultObj = $db->query($emailquery);
 
@@ -77,7 +107,14 @@ if($emailresultObj -> rowCount() > 0)
         echo "</tr>";
     }
 }
-?>  
+else
+{
+echo "no results to display";
+}  
+
+
+      ?>  
+
             </tbody>
         </table>
     </div>
