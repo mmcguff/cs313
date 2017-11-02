@@ -43,54 +43,56 @@
             <tbody>
 
             <div class="container">
-    <!-- Trigger the modal with a button -->
   
-
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Insert a new contact</h4>
+          <h4 class="modal-title">Insert a new contact!</h4>
         </div>
         <div class="modal-body">
-        <form>
+    <form action="insert.php" method="post">
+      <input type="hidden" name="submitted" value="true"/>  
       <label><b>First Name</b></label></br>
-      <input type="text" placeholder="Enter First Name" name="email" required></br>
+      <input type="text" placeholder="Enter First Name" name="firstName" required></br>
       <label><b>Last Name</b></label></br>
-      <input type="text" placeholder="Enter Last Name" name="email" required></br> 
+      <input type="text" placeholder="Enter Last Name" name="lastName" required></br> 
       <label><b>Email</b></label></br>
       <input type="text" placeholder="Enter Email" name="email" required></br>
-    
+       <label class="checkbox-inline">
+      
+      <input type="checkbox" id="subscriber" name="subscriber" value="Yes">Subscriber
+      </label>
+      
       <label class="checkbox-inline">
-      <input type="checkbox" value="">Subscriber
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="">Customer
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="">Host
-    </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="">Consultant
-    </label>
-    </form>
+      
+      <input type="checkbox" id="customer" name="customer" value="Yes">customer
+      </label>
+      <label class="checkbox-inline">
+      
+      <input type="checkbox" id="host" name="host" value="Yes">host
+      </label>
+      <label class="checkbox-inline">
+      
+      <input type="checkbox" id="consultant" name="consultant" value="Yes">consultant
+      </label> 
+      
         </div>
+        
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Insert</button>	
+          <button type="submit" class="btn btn-primary">Insert</button>	
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
+    </form>
       </div>
     </div>
   </div>
 </div>
-
-<?php
-          
+<?php          
         require 'herokuDBConnect.php';
         $contactquery = 'select CONTACT_ID, FIRST_NAME, LAST_NAME, CUSTOMER_ID, EMAIL_ID, CONTACT_DATE, PARTY_HOST, BECOME_A_CONSULTANT from CONTACT;';
-
 $contactresultObj = $db->query($contactquery);
 
 if($contactresultObj -> rowCount() > 0)
@@ -110,15 +112,10 @@ if($contactresultObj -> rowCount() > 0)
         echo "<td>".'<button type="button" class="btn btn-danger">Delete Contact</button>'."</td>";
         echo "</tr>";
     }
-
-}
-
-        
+}       
 ?>  
             </tbody>
         </table>
-    </div>
-
-    
+    </div>    
     </body>
 </html>
