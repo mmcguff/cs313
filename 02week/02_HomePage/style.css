@@ -34,7 +34,7 @@
 }
 
 /*Completed Assignments*/
- #w1, #w2, #w3, #w4, #w5, #w6, #w7, #w8{
+ #w1, #w2, #w3, #w4, #w5, #w6, #w7{
      color: lightgreen;
  }
 
@@ -96,7 +96,7 @@
     color:green;
 }
 
-#week6 {
+#week6, #week7 {
     opacity: 0.7;
     filter: alpha(opacity=50);
     background-image: url("img/week06.png");
@@ -107,7 +107,7 @@
     color:green;
 }
 
-#Week7, #Week8, #Week9, #Week10, #Week11, #Week12, #Week13, #Week14  {
+#Week8, #Week9, #Week10, #Week11, #Week12, #Week13, #Week14  {
     opacity: 0.7;
     filter: alpha(opacity=50);
     background-image: url("img/homepage.png");

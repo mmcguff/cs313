@@ -26,7 +26,7 @@ echo  "<button class='tablink' id='w3' onclick=\"openCity('week3', this, 'green'
 echo  "<button class='tablink' id='w4' onclick=\"openCity('week4', this, 'green')\">Week 4</button>";
 echo  "<button class='tablink' id='w5' onclick=\"openCity('week5', this, 'green')\">Week 5</button>";
 echo  "<button class='tablink' id='w6' onclick=\"openCity('week6', this, 'green')\"id='defaultOpen'>Week 6</button>";
-echo  "<button class='tablink' id='w7' onclick=\"openCity('week7', this, 'orange')\">Week 7</button>";
+echo  "<button class='tablink' id='w7' onclick=\"openCity('week7', this, 'green')\">Week 7</button>";
 echo  "<button class='tablink' id='w8' onclick=\"openCity('week8', this, 'orange')\">Week 8</button>";
 echo  "<button class='tablink' id='w9' onclick=\"openCity('week9', this, 'orange')\">Week 9</button>";
 echo "<button class='tablink' id='w10' onclick=\"openCity('week10', this, 'orange')\">Week 10</button>";
@@ -78,10 +78,12 @@ echo "    <h3>I was able to implement through php the ability to insert into a t
 echo "  </div>";
 echo "  </a>";
 
+echo "<a href='06week/index.php' ";
 echo "  <div id='week7' class='tabcontent'>";
 echo "    <h3>Week 7</h3>";
-echo "    <p>Coming Soon!</p>";
+echo "    <h3>I wish I had more time to work on this assignment and complete it properly but I need to move on to the node project if I am really going to accomplish what I really want/need to get out of this class.</h3>";
 echo "  </div>";
+echo "  </a>";
 
 echo "  <div id='week8' class='tabcontent'>";
 echo "    <h3>Week 8</h3>";
