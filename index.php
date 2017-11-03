@@ -24,8 +24,8 @@ echo  "<button class='tablink' id='w1' onclick=\"openCity('week1', this, 'green'
 echo  "<button class='tablink' id='w2' onclick=\"openCity('week2', this, 'green')\">Week 2</button>";
 echo  "<button class='tablink' id='w3' onclick=\"openCity('week3', this, 'green')\">Week 3</button>";
 echo  "<button class='tablink' id='w4' onclick=\"openCity('week4', this, 'green')\">Week 4</button>";
-echo  "<button class='tablink' id='w5' onclick=\"openCity('week5', this, 'green')\" id='defaultOpen'>Week 5</button>";
-echo  "<button class='tablink' id='w6' onclick=\"openCity('week6', this, 'orange')\">Week 6</button>";
+echo  "<button class='tablink' id='w5' onclick=\"openCity('week5', this, 'green')\">Week 5</button>";
+echo  "<button class='tablink' id='w6' onclick=\"openCity('week6', this, 'green')\"id='defaultOpen'>Week 6</button>";
 echo  "<button class='tablink' id='w7' onclick=\"openCity('week7', this, 'orange')\">Week 7</button>";
 echo  "<button class='tablink' id='w8' onclick=\"openCity('week8', this, 'orange')\">Week 8</button>";
 echo  "<button class='tablink' id='w9' onclick=\"openCity('week9', this, 'orange')\">Week 9</button>";
@@ -71,11 +71,12 @@ echo "    <h3>Week 5  Click to check out my read only database!</h3>";
 echo "  </div>";
 echo "  </a>";
 
-
+echo "<a href='06week/index.php' ";
 echo "  <div id='week6' class='tabcontent'>";
 echo "    <h3>Week 6</h3>";
-echo "    <p>Coming Soon!</p>";
+echo "    <h3>I was able to implement through php the ability to insert into a table.  This is incomplete but I learned enough that I confident if I had more time I would be able to get to totally working.  In the interest of time I am moving to other assignments.</h3>";
 echo "  </div>";
+echo "  </a>";
 
 echo "  <div id='week7' class='tabcontent'>";
 echo "    <h3>Week 7</h3>";

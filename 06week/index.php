@@ -112,8 +112,8 @@ if($contactresultObj -> rowCount() > 0)
         echo "<td>". $singleRowFromQuery['contact_date'].'</td>';
         echo "<td>". $singleRowFromQuery['party_host'].'</td>';
         echo "<td>". $singleRowFromQuery['become_a_consultant'].'</td>';
-        echo "<td>".'<button type="button" class="btn btn-warning">Edit Contact</button>'."</td>";
-        echo "<td>".'<button type="button" class="btn btn-danger">Delete Contact</button>'."</td>";
+        echo "<td>".'<button type="button" class="btn btn-warning disabled">Edit Contact</button>'."</td>";
+        echo "<td>".'<button type="button" class="btn btn-danger disabled">Delete Contact</button>'."</td>";
         echo "</tr>";
     }
 }       
