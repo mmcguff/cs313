@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
     <body>
            <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -52,9 +53,17 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Insert a new contact!</h4>
         </div>
+        
+        
+        <form action="insert.php" method="post">
         <div class="modal-body">
+<<<<<<< HEAD
     <form action="insert.php" method="post">
       <input type="hidden" name="submitted" value="true"/>  
+=======
+        <input type="hidden" name="submitted" value="1">
+
+>>>>>>> f904387f3e7d0315638132d1f9e615364d9c47b8
       <label><b>First Name</b></label></br>
       <input type="text" placeholder="Enter First Name" name="firstName" required></br>
       <label><b>Last Name</b></label></br>
@@ -67,6 +76,7 @@
       </label>
       
       <label class="checkbox-inline">
+<<<<<<< HEAD
       
       <input type="checkbox" id="customer" name="customer" value="Yes">customer
       </label>
@@ -79,13 +89,39 @@
       <input type="checkbox" id="consultant" name="consultant" value="Yes">consultant
       </label> 
       
+=======
+      <input type="checkbox" value="" name="subscriber">Subscriber
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="" name="delivery">Home Delivery
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="" name="customer">Customer
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="" name="host">Host
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="" name="consultant">Consultant
+    </label>
+   <div class="input-append date form_datetime">
+    <input size="16" type="text" value="" readonly>
+    <span class="add-on"><i class="icon-th"></i></span>
+</div>
+>>>>>>> f904387f3e7d0315638132d1f9e615364d9c47b8
         </div>
         
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Insert</button>	
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
+<<<<<<< HEAD
     </form>
+=======
+ </form>
+
+
+>>>>>>> f904387f3e7d0315638132d1f9e615364d9c47b8
       </div>
     </div>
   </div>
@@ -116,6 +152,14 @@ if($contactresultObj -> rowCount() > 0)
 ?>  
             </tbody>
         </table>
+<<<<<<< HEAD
     </div>    
     </body>
 </html>
+=======
+    </div>
+    
+    </body>
+
+</html>
+>>>>>>> f904387f3e7d0315638132d1f9e615364d9c47b8
