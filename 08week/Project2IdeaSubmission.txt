@@ -1,0 +1,3 @@
+In node.js I will build a chat site where users can login and chat with one another.  I will dress the site so that it functions as close to a regular chat sevice that I can get. If time permits I will also create a simple chat bot that can be connnect to my chat site and response to various tasks.
+
+If I can get this far the Mircosoft Bot framework makes it possible for your bot to work in a variety of difference channels out of the box including facebook messener, slack and sms.  I will ensure that build my site such that is will integrate nicely into the framework. 
