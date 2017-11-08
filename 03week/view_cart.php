@@ -1,5 +1,13 @@
+<?php
+
+include 'include.php';
+echo '<pre>';
+print_r($_POST);
+echo '</pre';
 
 
+
+?>
 
 
 <!DOCTYPE html>
@@ -25,19 +33,13 @@
                 </div>
             
 
-            Welcome <?php echo $_POST["name"]; ?><br>
-            Your email address is: <?php echo $_POST["email"]; ?>
-            Dog Price: <?php echo $_POST["dog"];?>
+      
             
                 <div class="heading">
                     <h1>Welcome to McGuff's Animal store!</h1>
                     <p>Click to add an animal to the shopping cart.</p>
                 </div>
 
-                <?php
-// Echo session variables that were set on previous page
-echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
-?>
     
     </body>
 </html>

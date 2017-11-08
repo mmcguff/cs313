@@ -1,0 +1,31 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://homepagecs313matthewmcguff.herokuapp.com/
+
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/mmcguff/cs313
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+I have the visualaztion between the different parts of the work flow working.  However I was unable to get my post variables to assign to my session variables.  Using some php code I am showing that I am aleast collecting data from a form that is displaying on next part of thw workflow.    
+
+
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+Many of the basic requirements I failed to complete as I was unable to assign $_POST to $_SESSSION.  All tutorials I watched on the subject and tutorials demostrated that this should haved worked but I am still missing something.  If you have any insight to what I have wrong at this point please let me know.  This is really bothering me. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I'm not proud of this submission.  I am turning in what I have as I cannont get behind.
+If I have to pick one thing, its pretty neat you can buy a whale for only $100. 
+
+6. List one strength and one limitation of using cookies.
+When using cookies you have the ability to data to persit for as long as you need it too.  However if someone is blocking cookies on their browser then the data will not persit.  
+
+7. Please select the category you feel best describes your assignment:
+B - Developing, but significantly deficient
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+What this application is supposes to be is clear but it fails to actually to meet the requirements.  It is clear to me if I were able to get my session variables to work as I needed them to I could have developed the application well beyond its current state.  

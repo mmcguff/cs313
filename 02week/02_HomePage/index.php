@@ -22,7 +22,7 @@ echo "<div class='allLinks'>";
 
 echo  "<button class='tablink' id='w1' onclick=\"openCity('week1', this, 'green')\" id='defaultOpen'>Week 1</button>";  
 echo  "<button class='tablink' id='w2' onclick=\"openCity('week2', this, 'green')\">Week 2</button>";
-echo  "<button class='tablink' id='w3' onclick=\"openCity('week3', this, 'orange')\">Week 3</button>";
+echo  "<button class='tablink' id='w3' onclick=\"openCity('week3', this, 'green')\">Week 3</button>";
 echo  "<button class='tablink' id='w4' onclick=\"openCity('week4', this, 'orange')\">Week 4</button>";
 echo  "<button class='tablink' id='w5' onclick=\"openCity('week5', this, 'orange')\">Week 5</button>";
 echo  "<button class='tablink' id='w6' onclick=\"openCity('week6', this, 'orange')\">Week 6</button>";
@@ -51,10 +51,12 @@ echo "    <h3>Week 2</h3>";
 echo "    <p>Home Page. You are looking at it. Enjoy!</p>";
 echo "  </div>";
 
+echo "<a href='../../03week/browse_items.php' ";
 echo "  <div id='week3' class='tabcontent'>";
 echo "    <h3>Week 3</h3>";
-echo "    <p>Coming Soon!</p>";
+echo "    <p>I ran into issues with getting post assigning to session. Will continue to work on this.</P>";
 echo "  </div>";
+echo "  </a>";
 
 echo "  <div id='week4' class='tabcontent'>";
 echo "    <h3>Week 4</h3>";
